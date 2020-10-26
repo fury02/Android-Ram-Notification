@@ -1,0 +1,60 @@
+<resources>
+  <string name="app_name">Widram</string>
+  <string name="action_settings">Settings</string>
+  <string name="name_settings_file">Settings.json</string>
+
+  <string name="Button_start">Start</string>
+  <string name="Button_stop">Stop</string>
+
+  <string name="AppCenterId">"a4587255-142b-4585-9c12-0cf7c25f9a42"</string>
+
+  <string name="title_home">Home</string>
+  <string name="title_dashboard">Dashboard</string>
+  <string name="title_settings">Settings</string>
+
+  <string name="StopService">Stop"</string >
+  <string name="RestartService">Restart"</string >
+
+  <string name="ServiceRamID">Widram.ServiceRamID</string >
+  <string name="IntentActionAlarm">Widram.IntentActionAlarm</string>
+  <string name="IntentActionUpdateSettings">Widram.IntentActionUpdateSettingsServiceRam</string>
+  <string name="IntentActionRestartServiceRam">Widram.IntentActionRestartServiceRam</string>
+  <string name="IntentActionStartServiceRam">Widram.IntentActionStartServiceRam</string>
+  <string name="IntentActionStopServiceRam">Widram.IntentActionStopServiceRam</string>
+  <string name="ActionMainActivity">Widram.ActionMainActivity</string>
+  <string name="ServiceStartedKey">Widram.ServiceStartedKey</string>
+  <string name="ServiceBoundedKey">Widram.ServiceBoundedKey</string>
+  <string name="BroadcastMessengeKey">Widram.BroadcastMessengeKey</string>
+
+  <integer name="IntegerNotificationRamID">987513</integer>
+  <string name="ChannelIDRam">ChannelLocalNotificationsRam</string>
+  <string name="ChannelNameRam">LocalNotificationsRam</string>
+  <string name="ChannelDescriptionRam">CountAvailableRam</string>
+
+  <string name="choose_typeface">Choose typeface</string>
+
+  <string-array name="array_typeface_style">
+
+    <item>anton.otf</item>
+
+  </string-array>
+
+  <string-array name="array_color">
+
+    <item> ForestGreen </item>
+    <item> Transparent </item>
+
+  </string-array>
+
+  <string-array name="array_material">
+
+    <item> transparent32x32 </item>
+    <item> transparent48x32 </item>
+    <item> transparent64x32 </item>
+    <item> transparent96x32 </item>
+    <item> transparent128x32 </item>
+    <item> transparent32x128 </item>
+
+  </string-array>
+
+</resources>

@@ -1,0 +1,20 @@
+﻿{
+  "UpdateTimer": "3000",
+  "TextSizeDigits": "78",
+  "TypefaceDigits": "anton.otf",
+  "ColorTextDigits": "ForestGreen",
+  "CanvasColor": "Transparent",
+  "Ordinate": "82",
+  "Abscissa": "7",
+  "CanvasMaterial": "transparent48x32",
+  "LayoutNotificationEmpty": "false",
+  "IsShowRelativeRAM": "true",
+  "IsShowFreeRam": "false",
+  "IsLogErrorStorage": "false",
+  "IsSendCrashes": "true",
+  "IsRamSelectedNotification": "true",
+  "IsCpuSelectedNotification": "false",
+  "IsShowAbsoluteRAM": "false",
+  "IsShowFreeCpu": "false",
+  "IsAutoStartWhenRebootOS": "false"
+}

@@ -1,0 +1,105 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:padding="6dip"
+        android:id="@+id/scrollView1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <TextView
+                android:text="Start: Service"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:id="@+id/textView1" />
+
+            <ImageView
+                android:src="@drawable/transparent32x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView1" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cornerRadius="50dp"
+                android:layout_gravity="center"
+                app:iconTint="@color/WhiteSmoke"
+                app:backgroundTint="@color/colorGreen"
+                app:icon="@drawable/start"
+                app:iconSize="50dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/materialButton1"/>
+
+            <TextView
+                android:text="Stop: Service"
+                android:textSize="25dp"
+                android:textColor="@android:color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="250dp"
+                android:id="@+id/textView2" />
+
+            <ImageView
+                android:src="@drawable/transparent32x32"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView3" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.FloatingActionButton"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cornerRadius="50dp"
+                android:layout_gravity="center"
+                app:iconTint="@color/WhiteSmoke"
+                app:backgroundTint="@color/DarkRed"
+                app:icon="@drawable/stop"
+                app:iconSize="45dp"
+                app:iconGravity="textStart"
+                app:iconPadding="0dp"
+                android:insetLeft="0dp"
+                android:insetTop="0dp"
+                android:insetRight="0dp"
+                android:insetBottom="0dp"
+                android:gravity="center_horizontal"
+                android:id="@+id/materialButton2" />
+
+            <ImageView
+                android:src="@drawable/transparent32x32"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>        
+
+    </ScrollView>
+
+</FrameLayout>

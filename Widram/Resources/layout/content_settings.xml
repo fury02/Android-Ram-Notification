@@ -1,0 +1,506 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:fadeScrollbars="false"
+        android:padding="6dip"
+        android:id="@+id/scrollView1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:scrollbars="vertical">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal">
+
+                    <ImageView
+                        android:src="@drawable/transparent16x16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:text="General settings"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                    android:textColor="@color/Gray"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:text="Set the following settings:"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textSize="17dp"
+                        android:textColor="@color/Orange"
+                        android:layout_margin="@dimen/abc_action_bar_elevation_material"/>
+
+                    <TextView
+                        android:text="App Info: Autostart - true;"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textSize="17dp"
+                        android:textColor="@color/ForestGreen"
+                        android:layout_margin="@dimen/abc_action_bar_elevation_material"/>
+                    
+                    <TextView
+                        android:text="Battery saver - No restrictions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="fill_vertical"
+                        android:textSize="17dp"
+                        android:textColor="@color/ForestGreen"
+                        android:layout_margin="@dimen/abc_action_bar_elevation_material"/>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:src="@drawable/transparent32x32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        style="@style/Widget.MaterialComponents.FloatingActionButton"
+                        android:layout_width="35dp"
+                        android:layout_height="80dp"
+                        app:cornerRadius="8dp"
+                        android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                        app:iconTint="@color/White"
+                        app:icon="@drawable/arrows_right"
+                        app:backgroundTint="@color/Gray"
+                        app:iconSize="60dp"
+                        app:iconGravity="textStart"
+                        app:iconPadding="0dp"
+                        android:insetLeft="0dp"
+                        android:insetTop="0dp"
+                        android:insetRight="0dp"
+                        android:insetBottom="0dp"
+                        android:id="@+id/materialButton1" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@drawable/transparent16x16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:text="Main settings"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                    android:textColor="@color/Gray"/>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Size:"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView2"/>
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/seekBar1"
+                android:max="140"
+                android:min="40"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Abscissa:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView10"/>
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/seekBar3"
+                android:max="70"
+                android:min="-70"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Ordinate:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView11"/>
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:max="110"
+                android:min="30"
+                android:id="@+id/seekBar4"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Timer update:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView14"/>
+
+            <androidx.appcompat.widget.AppCompatSeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:max="10000"
+                android:min="1000"
+                android:id="@+id/seekBar5"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@drawable/linegray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Show free CPU:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/OrangeRed"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/appCompatTextView1" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switchCompat1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Show relative RAM (%):"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/OrangeRed"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView4" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switch1"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Show absolute RAM (Gb):"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/appCompatTextView2" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switchCompat2" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Show free RAM:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView13" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switch2" />
+
+            <ImageView
+                android:src="@drawable/transparent16x16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <RadioGroup
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/radioGroup1">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                    android:text="Use RAM notification"
+                    android:textColor="@color/Gold"
+                    android:textSize="17sp"
+                    android:id="@+id/radioButton1">
+                </RadioButton>
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                    android:text="Use CPU notification"
+                    android:textColor="@color/Gold"
+                    android:textSize="17sp"
+                    android:id="@+id/radioButton2">
+                </RadioButton>
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@drawable/linegray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Typeface:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView5" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@android:style/TextAppearance.DeviceDefault.Widget.TextView.SpinnerItem"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/spinner1" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Color digits:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView7" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/spinner3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Color material:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView9" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/spinner5" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Material:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textColor="@color/WhiteSmoke"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/textView12" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/spinner6" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@drawable/linegray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Show the notification area:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textColor="@color/OrangeRed"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/appCompatTextView3" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switchCompat3" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <ImageView
+                    android:src="@drawable/linegray"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+
+            <!--<TextView
+                android:text="Developer settings"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:textColor="@color/Gray"/>-->
+
+           <!-- <androidx.appcompat.widget.AppCompatTextView
+                android:text="Logging:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:textColor="@color/WhiteSmoke"
+                android:id="@+id/textView15" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switch3" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Crashes:"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:textColor="@color/WhiteSmoke"
+                android:id="@+id/textView16" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/abc_list_item_height_small_material"
+                android:maxHeight="@dimen/abc_action_bar_content_inset_material"
+                android:layout_margin="@dimen/abc_action_bar_elevation_material"
+                android:id="@+id/switch4" />-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom | right"
+        android:layout_marginBottom="170dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/save"
+        style="@style/Widget.Design.FloatingActionButton"
+        android:backgroundTint="@color/DarkGreen"
+        app:borderWidth="0dp"
+        tools:visibility="visible"
+        android:id="@+id/floatingActionButton1" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom | right"
+        android:layout_marginBottom="90dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/default_save"
+        style="@style/Widget.Design.FloatingActionButton"
+        tools:visibility="visible"
+        android:id="@+id/floatingActionButton2" />
+
+</FrameLayout>
